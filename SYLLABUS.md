@@ -3,9 +3,9 @@
 
 Lecture: Tuesdays & Thursdays, 6:30 to 7:50pm, ISC 3291
 
-Sam Mason
-sdmason@email.wm.edu
-Office Hours:
+Sam Mason  
+sdmason@email.wm.edu  
+Office Hours:  
 Mondays, 6:30 to 7:50pm, ISC 3291
 
 ### Course Description
