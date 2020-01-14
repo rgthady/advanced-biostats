@@ -1,12 +1,10 @@
 # BIOL 404/504 Advanced Biostats
 ## William & Mary, Spring 2020
 
-Lecture: Tuesdays & Thursdays, 6:30 to 7:50pm, ISC 3291
-
-Sam Mason  
-sdmason@email.wm.edu  
-Office Hours:  
-Mondays, 6:30 to 7:50pm, ISC 3291
+**Lecture:** Tuesdays & Thursdays, 6:30 to 7:50pm, ISC 3291  
+**Instructor:** Sam Mason  
+**Email:** sdmason@email.wm.edu  
+**Office Hours:** Mondays, 6:30 to 7:50pm, ISC 3291
 
 ### Course Description
 
