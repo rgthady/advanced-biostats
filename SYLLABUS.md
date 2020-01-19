@@ -42,7 +42,22 @@ Given the breadth of inferential techniques used in modern biological research, 
 
 ### Grade Computation
 
-| Assessment | Points | Quantity | Point Total |
-| :---: | :---: | :---: | :---: |
-| Problem Sets | Variable | 12 | 500 |
-| Paper Discussions | 5 | 20 | 100 |
+| Assessment | Points | Quantity | Point Total | Course Weight |
+| :---: | :---: | :---: | :---: | :---: |
+| Problem Sets | Variable | 12 | 500 | 0.625 |
+| Paper Discussions | 5 | 20 | 100 | 0.125 |
+| Final Exam | 100 | 1 | 100 | 0.125 |
+| Project | 100 | 1 | 100 | 0.125 |
+
+### Letter Grade Assignment
+
+| Letter | Range |
+| :---: | :---: |
+| A | [0.93 - 1] |
+| A- | [0.9 - 0.93) |
+| B+ | [0.87 - 0.9) |
+| B | [0.83 - 0.87) |
+| B- | [0.8 - 0.83) |
+| C+ | [0.77 - 0.8) |
+| C | [0.73 - 0.77) |
+| C- | [0.7 - 0.73) |
