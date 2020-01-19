@@ -10,7 +10,7 @@
 
 Given the breadth of inferential techniques used in modern biological research, it has become increasingly important for scientists to maintain a high degree of statistical literacy. This course builds on the fundamental principles taught in introductory statistics courses, and offers practical insight into three of the most commonly applied modeling frameworks in contemporary literature: (1) linear and generalized linear modeling, (2) multivariate ordination, and (3) Bayesian analysis. These three concepts will structure the course schedule following a brief introduction to probability distributions, and the statistical programming language, R. To prioritize statistical application and interpretation, the course will rely heavily on R-based, in-class exercises, weekly take-hone problem sets, and methods-focused paper discussions.
 
-### Modes of Evaluation
+### Modes of Evaluation (MoE)
 
 **1. Problem Sets**
 
@@ -39,3 +39,10 @@ Given the breadth of inferential techniques used in modern biological research, 
    * Path Analysis
    * Bayesian Modeling in STAN
    * Analysis of Citizen Science Data
+
+### Grade Computation
+
+| Assessment | Points | Quantity | Point Total |
+| :---: | :---: | :---: | :---: |
+| Problem Sets | Variable | 12 | 500 |
+| Paper Discussions | 5 | 20 | 100 |
