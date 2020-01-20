@@ -73,7 +73,7 @@ Given the breadth of inferential techniques used in modern biological research, 
 
 Throughout the course we will be relying heavily on R, a flexible statistical programming language developed and maintained by the [R-Core Team](https://cloud.r-project.org/index.html). R is open-source, powerful, and, being a fully-fledged object-oriented programming language, scriptable. Statisticians should download the latest version for use in this course.
 
-** R Studio v1.2.5033**
+**R Studio v1.2.5033**
 
 When downloaded from the r-project.org website, R ships with a simple GUI, featuring a text editor, terminal, and support for graphics windowing. As we'll find, this simple interface can be limiting when working with multiple packages and dozens of variables. For the sake of usability, we will be interacting with R through R Studio, a wonderfully helpful integrated development environment (IDE) that can be [downloaded here](https://rstudio.com/products/rstudio/download/#download). 
 
