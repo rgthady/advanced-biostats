@@ -1,16 +1,16 @@
-#BIOL 404/504 Advanced Biostats
-##William & Mary, Spring 2020
+# BIOL 404/504 Advanced Biostats
+## William & Mary, Spring 2020
 
 **Lecture:** Tuesdays & Thursdays, 6:30 to 7:50pm, ISC 3291  
 **Instructor:** Sam Mason  
 **Email:** sdmason@email.wm.edu  
 **Office Hours:** Mondays, 6:30 to 7:50pm, ISC 3291
 
-###Course Description
+### Course Description
 
 Given the breadth of inferential techniques used in modern biological research, it has become increasingly important for scientists to maintain a high degree of statistical literacy. This course builds on the fundamental principles taught in introductory statistics courses, and offers practical insight into three of the most commonly applied modeling frameworks in contemporary literature: (1) linear and generalized linear modeling, (2) multivariate ordination, and (3) Bayesian analysis. These three concepts will structure the course schedule following a brief introduction to probability distributions, and the statistical programming language, R. To prioritize statistical application and interpretation, the course will rely heavily on R-based, in-class exercises, weekly take-hone problem sets, and methods-focused paper discussions.
 
-###Modes of Evaluation
+### Modes of Evaluation
 
 **1. Problem Sets**
 
@@ -40,7 +40,7 @@ Given the breadth of inferential techniques used in modern biological research, 
    * Bayesian Modeling in STAN
    * Analysis of Citizen Science Data
 
-###Grade Computation
+### Grade Computation
 
 | Assessment | Points | Quantity | Point Total | Course Weight |
 | :---: | :---: | :---: | :---: | :---: |
@@ -49,11 +49,12 @@ Given the breadth of inferential techniques used in modern biological research, 
 | Final Exam | 100 | 1 | 100 | 0.125 |
 | Project | 100 | 1 | 100 | 0.125 |
 
-###Letter Grade Assignment
+### Letter Grade Assignment
 
 | Letter | Range |
 | :---: | :---: |
-| A | [0.93 - 1] |
+| A+ | [0.97 - 1] |
+| A | [0.93 - 0.97) |
 | A- | [0.9 - 0.93) |
 | B+ | [0.87 - 0.9) |
 | B | [0.83 - 0.87) |
@@ -61,8 +62,12 @@ Given the breadth of inferential techniques used in modern biological research, 
 | C+ | [0.77 - 0.8) |
 | C | [0.73 - 0.77) |
 | C- | [0.7 - 0.73) |
+| D+ | [0.67 - 0.7) |
+| D | [0.63 - 0.67) |
+| D- | [0.6 - 0.63) |
+| F | [0 - 0.6) |
 
-###Course Software
+### Course Software
 
 **R v3.6.2**
 
@@ -80,7 +85,7 @@ This course uses the code sharing website, [GitHub](http://github.com), to distr
 
 When necessary, the instructor will use the web app, [Codeshare](https://codeshare.io), for real-time code editing and collaboration during class or office hours.
 
-###Homework Formatting & Submission
+### Homework Formatting & Submission
 
 Homework should be formatted following the example below:
 
@@ -108,12 +113,32 @@ summary(lmod)
 
 Completed problems sets should be uploaded to the correct folder in the [problem-sets](https://github.com/sdmason/advanced-biostats/tree/master/problem-sets) directory of the course repository. Each statistician must upload their own work, as submission is assigned to the uploader's GitHub account.
 
-###Academic Honesty
+### Academic Honesty
 
 William & Mary has the nation's oldest [honor code](http://www.wm.edu/honor), dating back to at least 1779. The Honor Code establishes a level playing field where all can be fairly evaluated based on their own ability and preparation. The Code also provides the bond of our word based on our honor.
 
 Unless otherwise stated explicitly by me, all work you submit must be your own, and I expect you to work independently on assignments. On written assignments, you must provide appropriate citation for all thoughts, words, or ideas that are not your own (this includes the ideas of peers). Unless authorized by me, you cannot consult outside resources. The student-led honor system is responsible for resolving any suspected violations of the Honor Code, and I will report all suspected instances of academic dishonesty to the honor system. I also encourage you to contact me with any questions or concerns. The [Student Handbook](http://www.wm.edu/studenthandbook) includes your responsibilities as a student. Your full participation and observance of the Honor Code is expected.
 
-###Student Accessibility Service
+### Student Accessibility Service
 
 William & Mary accommodates students with disabilities in accordance with federal laws and university policy. Any student who feels they may need an accommodation based on the impact of a learning, psychiatric, physical, or chronic health diagnosis should contact Student Accessibility Services staff at 757-221-2512 or at sas@wm.edu to determine if accommodations are warranted and to obtain an official letter of accommodation.
+
+### Course Schedule
+
+| Date | Topic | Paper | Assignment Due |
+| :---: | :---: | :---: | :---: |
+| 01/23 | Course Introduction & R Tutorial | NA | GitHub Registration |
+| 01/28 | Probability Distributions & Graphics in R | NA | NA |
+| 01/30 | Bootstrapping & for() loops in R | NA | NA |
+| 02/04 | Linear Models & Object Indexing | NA | Problem Set 1 |
+| 02/06 | Paper Discussion & AIC | Pywell et al. 2004 | NA |
+| 02/11 | Generalized Linear Modeling Part I | NA | Problem Set 2 |
+| 02/13 | Generalized Linear Modeling Part II | NA | NA |
+| 02/18 | Mixed Effect Modeling Part I | NA | Problem Set 3 |
+| 02/20 | Paper Discussion & Mixed Effect Modeling Part II | Bolker et al. 2008 | NA |
+| 02/25 | A Formal Intro to Linear Algebra & Matrices in R | NA | Problem Set 4 |
+| 02/27 | Principal Component Analysis Part I | NA | NA |
+| 03/03 | Principal Component Analysis Part II | NA | Problem Set 5 |
+| 03/05 | Paper Discussion & Discriminant Function Analysis Part I | TBD | NA |
+| 03/10 | No Class (Spring Break) | NA | NA |
+| 03/12 | No Class (Spring Break) | NA | NA |
