@@ -1,20 +1,20 @@
-# BIOL 404/504 Advanced Biostats
-## William & Mary, Spring 2020
+#BIOL 404/504 Advanced Biostats
+##William & Mary, Spring 2020
 
 **Lecture:** Tuesdays & Thursdays, 6:30 to 7:50pm, ISC 3291  
 **Instructor:** Sam Mason  
 **Email:** sdmason@email.wm.edu  
 **Office Hours:** Mondays, 6:30 to 7:50pm, ISC 3291
 
-### Course Description
+###Course Description
 
 Given the breadth of inferential techniques used in modern biological research, it has become increasingly important for scientists to maintain a high degree of statistical literacy. This course builds on the fundamental principles taught in introductory statistics courses, and offers practical insight into three of the most commonly applied modeling frameworks in contemporary literature: (1) linear and generalized linear modeling, (2) multivariate ordination, and (3) Bayesian analysis. These three concepts will structure the course schedule following a brief introduction to probability distributions, and the statistical programming language, R. To prioritize statistical application and interpretation, the course will rely heavily on R-based, in-class exercises, weekly take-hone problem sets, and methods-focused paper discussions.
 
-### Modes of Evaluation
+###Modes of Evaluation
 
 **1. Problem Sets**
 
-   Problem sets will be assigned weekly on Tuesdays, focusing on recently discussed and demonstrated topics and techniques. Submission of your completed work, in the form of an annotated .R document (see [Homework Formatting & Submission](###Homework Formatting & Submission) for more details), should be made to the [course GitHub repository](https://github.com/sdmason/advanced-biostats) at the start of class on the following Tuesday. Any problem set can be revised and resubmitted to GitHub within one week of recieving the graded first attempt. Revised work is eligible for up to 75% of the original point value. For example, if a particular problem is marked 3/10, a perfect revision would earn the statistician a 7.5/10. It follows then that, aside from personal edification, revising problems marked >= 0.75 confers no additional academic benefit. Problem sets should initially be completed independently; however, I encourage you to seek the help of your peers when rivising a problem set! And, of course, you are always welcome to discuss problem sets with me at any time.
+   Problem sets will be assigned weekly on Tuesdays, focusing on recently discussed and demonstrated topics and techniques. Submission of your completed work, in the form of an annotated .R document (see [Homework Formatting & Submission](###Homework-Formatting-&-Submission) for more details), should be made to the [course GitHub repository](https://github.com/sdmason/advanced-biostats) at the start of class on the following Tuesday. Any problem set can be revised and resubmitted to GitHub within one week of recieving the graded first attempt. Revised work is eligible for up to 75% of the original point value. For example, if a particular problem is marked 3/10, a perfect revision would earn the statistician a 7.5/10. It follows then that, aside from personal edification, revising problems marked >= 0.75 confers no additional academic benefit. Problem sets should initially be completed independently; however, I encourage you to seek the help of your peers when rivising a problem set! And, of course, you are always welcome to discuss problem sets with me at any time.
 
 **2. Paper Discussions**
 
@@ -40,7 +40,7 @@ Given the breadth of inferential techniques used in modern biological research, 
    * Bayesian Modeling in STAN
    * Analysis of Citizen Science Data
 
-### Grade Computation
+###Grade Computation
 
 | Assessment | Points | Quantity | Point Total | Course Weight |
 | :---: | :---: | :---: | :---: | :---: |
@@ -49,7 +49,7 @@ Given the breadth of inferential techniques used in modern biological research, 
 | Final Exam | 100 | 1 | 100 | 0.125 |
 | Project | 100 | 1 | 100 | 0.125 |
 
-### Letter Grade Assignment
+###Letter Grade Assignment
 
 | Letter | Range |
 | :---: | :---: |
@@ -62,7 +62,7 @@ Given the breadth of inferential techniques used in modern biological research, 
 | C | [0.73 - 0.77) |
 | C- | [0.7 - 0.73) |
 
-### Course Software
+###Course Software
 
 **R v3.6.2**
 
@@ -74,7 +74,7 @@ When downloaded from the r-project.org website, R ships with a simple GUI, featu
 
 **GitHub**
 
-This course uses the code sharing website, [GitHub](http://github.com), to distribute all information through the [course repository](https://github.com/sdmason/advanced-biostats). This repository will also serve as the submission location for all completed problem sets. GitHub uses the Git version control protocol, assigning all file modifications a unique hash, along with a time stamp. We will leverage this version control protocol when revising submitted problem sets in accordance with the **Problem Sets** descriptor in the [Modes of Evaluation](### Modes of Evaluation) section.
+This course uses the code sharing website, [GitHub](http://github.com), to distribute all information through the [course repository](https://github.com/sdmason/advanced-biostats). This repository will also serve as the submission location for all completed problem sets. GitHub uses the Git version control protocol, assigning all file modifications a unique hash, along with a time stamp. We will leverage this version control protocol when revising submitted problem sets in accordance with the **Problem Sets** descriptor in the [Modes of Evaluation](###Modes-of-Evaluation) section.
 
 **Codeshare**
 
