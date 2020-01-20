@@ -10,11 +10,11 @@
 
 Given the breadth of inferential techniques used in modern biological research, it has become increasingly important for scientists to maintain a high degree of statistical literacy. This course builds on the fundamental principles taught in introductory statistics courses, and offers practical insight into three of the most commonly applied modeling frameworks in contemporary literature: (1) linear and generalized linear modeling, (2) multivariate ordination, and (3) Bayesian analysis. These three concepts will structure the course schedule following a brief introduction to probability distributions, and the statistical programming language, R. To prioritize statistical application and interpretation, the course will rely heavily on R-based, in-class exercises, weekly take-hone problem sets, and methods-focused paper discussions.
 
-### Modes of Evaluation (MoE)
+### Modes of Evaluation
 
 **1. Problem Sets**
 
-   Problem sets will be assigned weekly on Tuesdays, focusing on recently discussed and demonstrated topics and techniques. Submission of your completed work, in the form of an annotated .R document (see [Homework Formatting & Submission](###Homework Formatting & Submission) for more details), should be made to the [course GitHub repository](https://github.com/sdmason/advanced-biostats) no later than 12:00pm on the following Tuesday. Any problem set can be revised and resubmitted to GitHub within one week of recieving the graded first attempt. Revised work is eligible for up to 75% of the original point value. For example, if a particular problem is marked 3/10, a perfect revision would earn the statistician a 7.5/10. It follows then that, aside from personal edification, revising problems marked >= 0.75 confers no additional academic benefit. Problem sets should initially be completed independently; however, I encourage you to seek the help of your peers when rivising a problem set! And, of course, you are always welcome to discuss problem sets with me at any time.
+   Problem sets will be assigned weekly on Tuesdays, focusing on recently discussed and demonstrated topics and techniques. Submission of your completed work, in the form of an annotated .R document (see [Homework Formatting & Submission](###Homework Formatting & Submission) for more details), should be made to the [course GitHub repository](https://github.com/sdmason/advanced-biostats) at the start of class on the following Tuesday. Any problem set can be revised and resubmitted to GitHub within one week of recieving the graded first attempt. Revised work is eligible for up to 75% of the original point value. For example, if a particular problem is marked 3/10, a perfect revision would earn the statistician a 7.5/10. It follows then that, aside from personal edification, revising problems marked >= 0.75 confers no additional academic benefit. Problem sets should initially be completed independently; however, I encourage you to seek the help of your peers when rivising a problem set! And, of course, you are always welcome to discuss problem sets with me at any time.
 
 **2. Paper Discussions**
 
@@ -61,3 +61,48 @@ Given the breadth of inferential techniques used in modern biological research, 
 | C+ | [0.77 - 0.8) |
 | C | [0.73 - 0.77) |
 | C- | [0.7 - 0.73) |
+
+### Course Software
+
+**R v3.6.2**
+
+Throughout the course we will be relying heavily on R, a flexible statistical programming language developed and maintained by the [R-Core Team](https://cloud.r-project.org/index.html). R is open-source, powerful, and, being a fully-fledged object-oriented programming language, scriptable. Statisticians should download the latest version for use in this course.
+
+** R Studio v1.2.5033**
+
+When downloaded from the r-project.org website, R ships with a simple GUI, featuring a text editor, terminal, and support for graphics windowing. As we'll find, this simple interface can be limiting when working with multiple packages and dozens of variables. For the sake of usability, we will be interacting with R through R Studio, a wonderfully helpful integrated development environment (IDE) that can be [downloaded here](https://rstudio.com/products/rstudio/download/#download). 
+
+**GitHub**
+
+This course uses the code sharing website, [GitHub](http://github.com), to distribute all information through the [course repository](https://github.com/sdmason/advanced-biostats). This repository will also serve as the submission location for all completed problem sets. GitHub uses the Git version control protocol, assigning all file modifications a unique hash, along with a time stamp. We will leverage this version control protocol when revising submitted problem sets in accordance with the **Problem Sets** descriptor in the [Modes of Evaluation](### Modes of Evaluation) section.
+
+**Codeshare**
+
+When necessary, the instructor will use the web app, [Codeshare](https://codeshare.io), for real-time code editing and collaboration during class or office hours.
+
+### Homework Formatting & Submission
+
+Homework should be formatted following the example below:
+
+```
+## Problem Set 1
+## Sam Mason
+
+## 1
+x <- rnorm(100, 0, 1)      # Creates a vector of 100 random draws from
+                           # a normal distribution with mean 0 and sd 1
+y <- rnorm(100, 2, 0.5)
+plot(y~x)                  # Plots the y vector as a function of the x vector
+
+## 2
+lmod <- lm(y~x)            # Creates a univariate regression model where
+                           # y is the response variable and x is the
+                           # explanatory variable
+summary(lmod)
+```
+
+* The header should include the problem set title and the statistician's full name.
+* Problem numbers should be clearly marked with a double hash.
+* Annotations should be aligned to the right, using a single hash.
+* The same operation does not need to be annotated each time it is used (e.g., rnorm()).
+* Utility functions (e.g., View(), summary(), print(), etc.) do not need annotation.
