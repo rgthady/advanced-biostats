@@ -1,0 +1,97 @@
+---
+title: "Lecture 3 - Introduction to Linear Modeling"
+author: "Sam Mason"
+date: "2/4/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Variance & Covariance
+
+**Variance**, $\sigma^2$, should be a familiar concept to us at this point in our statistical careers. Formally, variance is given by the equation:
+
+$$
+\sigma^2 = \frac{\sum{(x_{i}-\mu)^2}}{N}
+$$
+where large deviations from the population mean, $\mu$, yield a consequently large variance. We can calculate the variance in R using the code:
+
+```{r variance}
+sample <- rnorm(25)
+sample.variance <- var(sample)
+print(sample.variance)
+```
+
+We can rewrite the formal definition of population variance this way
+
+$$
+\sigma^2 = \frac{\sum{(x_{i}-\mu)(x_{i}-\mu)}}{N}
+$$
+to highlight the product of two deviations from the mean. These deviations, are, of course, equivalent in direction (positive or negative) and magnitude, yiedling only positive values in the numerator. Here we are using only a single vector of data, but we can rewrite this formula once again to accomodate a second vector of data of length $N$.
+
+$$
+Cov(\overrightarrow{x}, \overrightarrow{y}) = \frac{\sum{(x_{i}-\mu_{x})(y_{i}-\mu_{y})}}{N}
+$$
+Here, we are not calculating the *variance* in a single set of data, but the **covariance** between two different sets of data. This equation, if it could talk, would ask the question, *in general, how does y deviate from its mean when x deviates from its mean?* For example, if negative deviations in $x$ were *generally* accompanied by positive deviations in $y$, the covariance would be negative. If large deviations in x *generally* accompaied large deviation in $y$, the covariance would be large.  
+  
+We can calculate the covariance between two variables of the same size in R using the code:
+
+```{r covariance}
+set.seed(5)
+sample.x <- rnorm(25)
+sample.y <- rnorm(25, 2, 2)
+covariance <- cov(sample.x, sample.y)
+print(covariance)
+```
+
+Excellent! Roughly 0.057, umm, covariance units? Wait, what does this value tell us? Okay, so the direction makes sense. The covariance of these two values is positive, meaning that, *generally*, positive deviations in one correspond to positive deviations in the other and negative deviations in one correspond to negative deviations in the other. Take a second to visualize this trend as a scatterplot. Mine looks like this:  
+  
+```{r scatterplot, echo=FALSE}
+set.seed(5)
+sample.x <- rnorm(25)
+sample.y <- rnorm(25, 2, 2)
+plot(sample.y ~ sample.x, main = 'X & Y Scatterplot', xlab = 'X', ylab = 'Y', pch = 19)
+```
+
+Let's pluck this covariance value from the mathematical ethos by dividing by the variance of $\overrightarrow{x}$. Examine the covariance formula again. You can imagine many vectors $\overrightarrow{x}$ and $\overrightarrow{y}$ that are characterized by the same covariance value. Here's one for example:
+
+```{r shared covariance}
+set.seed(5)
+sample.x.prime <- rnorm(25, 10, 0.25)
+sample.y.prime <- rnorm(25, 0.5, 8)
+cov(sample.x.prime, sample.y.prime)
+```
+
+However, by dividing by the variance of $\overrightarrow{x}$, we can differentiate between the datasets.
+
+```{r dividing by var x}
+set.seed(5)
+sample.x <- rnorm(25)
+sample.y <- rnorm(25, 2, 2)
+cov(sample.x, sample.y)/var(sample.x)
+
+sample.x.prime <- rnorm(25, 10, 0.25)
+sample.y.prime <- rnorm(25, 0.5, 8)
+cov(sample.x.prime, sample.y.prime)/var(sample.x.prime)
+```
+
+Alright, I think it's time for the big reveal! Let's quantify the effect that variable $x$ has on variable $y$ using a linear model with a normal error structure. In R, the code looks like this:
+
+```{r simple linear model}
+set.seed(5)
+sample.x <- rnorm(25)
+sample.y <- rnorm(25, 2, 2)
+mod <- lm(sample.y ~ sample.x) # a linear model where y is a function of x
+summary(mod)
+```
+
+Go to the ```Coefficients:``` table in the model output and find the estimated slope below the estimated intercept. Does that value look familiar? HOLY SMOKES! It's the same number we get when we divide $Cov(\overrightarrow{x}, \overrightarrow{y})$ by $\sigma^2_{x}$.  
+  
+In R, calculate the intercept of the line given by this linear model. **HINT:** The coordinate given by the mean of x and the mean of y falls on the line.  
+  
+**CHALLENGE:** Calculate the residual standard error. **HINT:** You will need to look up the formula online.
+  
